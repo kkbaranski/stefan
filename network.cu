@@ -220,8 +220,8 @@ __host__ void generate() {
 			for(int c=0;c<13;++c)
 				for(int d=0;d<5;++d)
 					for(int e=0;e<5;++e)
-						FIRST_LAYER_WEIGHT[a][b][c][d][e] = -0.001;
-						//FIRST_LAYER_WEIGHT[a][b][c][d][e] = ((double)rand()/(double)RAND_MAX)-0.5;
+						//FIRST_LAYER_WEIGHT[a][b][c][d][e] = -0.001;
+						FIRST_LAYER_WEIGHT[a][b][c][d][e] = ((double)rand()/(double)RAND_MAX)-0.5;
 	// SECOND_LAYER_WEIGHT
 	for(int a=0;a<50;++a) 
 		for(int b=0;b<5;++b)
@@ -229,18 +229,18 @@ __host__ void generate() {
 				for(int d=0;d<6;++d)
 					for(int e=0;e<5;++e)
 						for(int f=0;f<5;++f)
-							SECOND_LAYER_WEIGHT[a][b][c][d][e][f] = -0.001;
-							//SECOND_LAYER_WEIGHT[a][b][c][d][e][f] = ((double)rand()/(double)RAND_MAX)-0.5;
+							//SECOND_LAYER_WEIGHT[a][b][c][d][e][f] = -0.001;
+							SECOND_LAYER_WEIGHT[a][b][c][d][e][f] = ((double)rand()/(double)RAND_MAX)-0.5;
 	// THIRD_LAYER_WEIGHT
 	for(int a=0;a<100;++a) 
 		for(int b=0;b<50;++b)
 			for(int c=0;c<5;++c)
 				for(int d=0;d<5;++d)
-					THIRD_LAYER_WEIGHT[a][b][c][d] = -0.001;
-					//THIRD_LAYER_WEIGHT[a][b][c][d] = ((double)rand()/(double)RAND_MAX)-0.5;
+					//THIRD_LAYER_WEIGHT[a][b][c][d] = -0.001;
+					THIRD_LAYER_WEIGHT[a][b][c][d] = ((double)rand()/(double)RAND_MAX)-0.5;
 	// OUTPUT_WEIGHT
 	for(int a=0;a<10;++a)
 		for(int b=0;b<100;++b)
-			OUTPUT_WEIGHT[a][b] = -0.001;
-			//OUTPUT_WEIGHT[a][b] = ((double)rand()/(double)RAND_MAX)-0.5;
+			//OUTPUT_WEIGHT[a][b] = -0.001;
+			OUTPUT_WEIGHT[a][b] = ((double)rand()/(double)RAND_MAX)-0.5;
 }
